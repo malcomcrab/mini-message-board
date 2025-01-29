@@ -5,14 +5,13 @@
   </head>
   <body>
     <h2><%=title%></h2>
-    <ul>
-        <% messages.map((message) => { %>
+    
           <li><%= message.text %>
             <%= message.user %> 
             <%= message.added %>  
-            <a href="/message/<%= messages.indexOf(message) %>">Open</a>
+           
         </li>
-        <% }) %>
+       
       </ul>
   </body>
 </html>
